@@ -3,12 +3,32 @@ import { Subject } from 'rxjs';
 import { Post } from '../models/post.model';
 import * as firebase from 'firebase';
 import {Book} from "../../../../mon-projet-book/src/app/models/book.model";
+import {HttpClient} from "@angular/common/http";
 
 @Injectable()
 export class PostService {
 
-  posts : Post[] = this.getPosts();
+  constructor(private httpClient: HttpClient) { }
+
+  posts : Post[] = [];
   postsSubject = new Subject<Post[]>();
+
+    getAppareilsFromServer() {
+    this.httpClient
+      .get<any[]>('https://post12112018.firebaseio.com/posts.json')
+      .subscribe(
+        (response) => {
+          this.posts = response;
+          if(response == null){
+            this.posts = [];
+          }
+          this.emitPosts();
+        },
+        (error) => {
+          console.log('Erreur ! : ' + error);
+        }
+      );
+  }
 
   emitPosts() {
     this.postsSubject.next(this.posts);
@@ -16,15 +36,6 @@ export class PostService {
 
   savePosts() {
     firebase.database().ref('/posts').set(this.posts);
-  }
-
-  getPosts() {
-    firebase.database().ref('/posts')
-      .on('value', (data: firebase.database.DataSnapshot) => {
-          this.posts = data.val() ? data.val() : [];
-          this.emitPosts();
-        }
-      );
   }
 
   createNewPost(newPost: Post) {

@@ -25,15 +25,8 @@ export class PostListComponent implements OnInit, OnDestroy {
       }
     );
     this.postService.emitPosts();
+    this.postService.getAppareilsFromServer();
   }
-
-  /*getLoveIts(){
-    if(this.postLoveIts > 0) {
-      return 'green';
-    } else {
-      return 'red';
-    }
-  }*/
 
   onLove(post:Post, love:boolean){
     if(love){

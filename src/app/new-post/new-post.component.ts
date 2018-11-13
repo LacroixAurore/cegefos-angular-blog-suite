@@ -5,11 +5,11 @@ import {PostService} from "../services/post.service";
 import {Post} from "../models/post.model";
 
 @Component({
-  selector: 'app-post-form',
-  templateUrl: './post-form.component.html',
-  styleUrls: ['./post-form.component.scss']
+  selector: 'app-new-form',
+  templateUrl: './new-post.component.html',
+  styleUrls: ['./new-post.component.scss']
 })
-export class PostFormComponent implements OnInit {
+export class NewPostComponent implements OnInit {
 
   postForm: FormGroup;
 
@@ -33,7 +33,6 @@ export class PostFormComponent implements OnInit {
     const newPost = new Post(title, description);
     newPost.loveIts = 0;
     newPost.created_at = Date.now();
-    console.log(newPost.created_at);
     this.postService.createNewPost(newPost);
     this.router.navigate(['/posts']);
   }
