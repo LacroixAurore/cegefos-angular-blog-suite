@@ -3,5 +3,5 @@
     { "id": 1,"cltCompte": 1, "cltNomSociete": "Client 1" , "cltAdresse1" : "Adress1_1", "cltAdresse2" : "Adress2_1", "cltCodePostal" : "69001", "cltVille" : "ville_1", "cltMail" : "mail1@toto.fr", "cltTelephone" : "0101010101"},
     { "id": 2,"cltCompte": 2, "cltNomSociete": "Client 2" , "cltAdresse1" : "Adress1_2", "cltAdresse2" : "Adress2_2", "cltCodePostal" : "69002", "cltVille" : "ville_2", "cltMail" : "mail2@toto.fr", "cltTelephone" : "0202020202"},
     { "id": 3,"cltCompte": 3, "cltNomSociete": "Client 3" , "cltAdresse1" : "Adress1_3", "cltAdresse2" : "Adress2_3", "cltCodePostal" : "69003", "cltVille" : "ville_3", "cltMail" : "mail3@toto.fr", "cltTelephone" : "0303030303"},
-  ]
+  ],
 }
