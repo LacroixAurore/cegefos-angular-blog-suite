@@ -1,7 +1,7 @@
 {
   "clients": [
-    { "clt_compte": 1, "clt_nom_societe": "Client 1" , "clt_adresse1" : "Adress1_1", "clt_adresse2" : "Adress2_1", "clt_code_postal" : "69001", "clt_ville" : "ville_1", "clt_mail" : "mail1@toto.fr", "clt_telephone" : "0101010101"},
-    { "clt_compte": 2, "clt_nom_societe": "Client 2" , "clt_adresse1" : "Adress1_2", "clt_adresse2" : "Adress2_2", "clt_code_postal" : "69002", "clt_ville" : "ville_2", "clt_mail" : "mail2@toto.fr", "clt_telephone" : "0202020202"},
-    { "clt_compte": 3, "clt_nom_societe": "Client 3" , "clt_adresse1" : "Adress1_3", "clt_adresse2" : "Adress2_3", "clt_code_postal" : "69003", "clt_ville" : "ville_3", "clt_mail" : "mail3@toto.fr", "clt_telephone" : "0303030303"},
+    { "id": 1,"clt_compte": 1, "clt_nom_societe": "Client 1" , "clt_adresse1" : "Adress1_1", "clt_adresse2" : "Adress2_1", "clt_code_postal" : "69001", "clt_ville" : "ville_1", "clt_mail" : "mail1@toto.fr", "clt_telephone" : "0101010101"},
+    { "id": 2,"clt_compte": 2, "clt_nom_societe": "Client 2" , "clt_adresse1" : "Adress1_2", "clt_adresse2" : "Adress2_2", "clt_code_postal" : "69002", "clt_ville" : "ville_2", "clt_mail" : "mail2@toto.fr", "clt_telephone" : "0202020202"},
+    { "id": 3,"clt_compte": 3, "clt_nom_societe": "Client 3" , "clt_adresse1" : "Adress1_3", "clt_adresse2" : "Adress2_3", "clt_code_postal" : "69003", "clt_ville" : "ville_3", "clt_mail" : "mail3@toto.fr", "clt_telephone" : "0303030303"},
   ]
 }
